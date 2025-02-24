@@ -7,7 +7,7 @@ import MarkdownIt from 'markdown-it';
 import {createSegmentti} from './promptit/segmentti.js';
 import {createKilpailijat} from './promptit/kilpailijat.js';
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
