@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<main>
+  <h1>Palvelun tai IT-ratkaisun kartoitus</h1>
+  <p>
+Kuvaa palvelu tai IT-ratkaisu.
+  </p>
+  <form action="/kartoitus" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Kuvaus</label>
+      <textarea class="form-control" id="kuvaus" name="kuvaus" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Valitse seuraavista</label>
+      <select name="toiminto" class="form-select">
+        <option value="persoona">Persoonat</option>
+        <option value="segmentti">Asiakas-segmentit</option>
+        <option value="kilpailijat">Kilpailija-analyysi</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Lähetä</button>
+  </form>
+</main>
+<%- include('partials/footer') %>
