@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+<main>
+  <h1>Kehitysneuvottelu tms</h1>
+  <p>
+Kuvaa tilannetapaus.
+  </p>
+  <form action="/neuvottelu" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Kuvaus</label>
+      <textarea class="form-control" id="kuvaus" name="kuvaus" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Lähetä</button>
+  </form>
+</main>
+<%- include('partials/footer') %>

@@ -4,9 +4,7 @@ import OpenAI from 'openai';
 console.log(process.env.OPENAI_API_KEY);
 const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
 
-const assistant_id = 'asst_DkFLbzHboaLA6HXafHSDU6zL';
-
-async function assistant(prompt) {
+async function assistant(prompt, assistant_id) {
   const thread = await openai.beta.threads.create();
 
   const message = await openai.beta.threads.messages.create(thread.id, {
