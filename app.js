@@ -70,11 +70,16 @@ app.post('/kartoitus', async (req, res) => {
     console.log(persoonaTekstit);
     let prompt =
       '. Kuvan hahmo tulisi olla iloinen.  Generoi kuva seuraavalla tyylillä: sarjakuva. Ensure that there are absolutely no visible texts, words, or logos anywhere in the image.';
-    const kuvaOsoitteet = Promise.all(
+    const kuvaOsoitteet = await Promise.all(
       persoonaTekstit.map(async (persoona) => {
-        return await createImage(persoona.otsikko + persoona.teksti + prompt);
+        const kuva = await createImage(
+          persoona.otsikko + persoona.teksti + prompt
+        );
+        //console.log('jorma', kuva);
+        return kuva;
       })
     );
+    console.log('jorma', kuvaOsoitteet);
     const uusiHtml = lisaaKuvat(teksti, kuvaOsoitteet);
     res.render('kartoitusvastaus', {teksti: uusiHtml});
     return;
