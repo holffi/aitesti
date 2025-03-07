@@ -9,6 +9,14 @@ function createPersona(kuvaus) {
 
   Kirjoita jokaiselle persoonaa lyhyt kuvaus sisältäen nimi, taustatarina, tavoitteet, tarpeet ja haasteet. Varmista, että jokainen osa-alue juontaa juurensa suoraan vector storagen dokumenteista"
 
+  Vastaus tulisi olla tämän esimerkin mukainen:
+  ## Persoona 1: Nimi
+
+     - **Taustatarina:** Taustatarina
+     - **Tavoitteet:** Tavoitteet
+     - **Tarpeet:** Tarpeet
+     - **Haasteet:** Haasteet
+
   Vastauksessa pitää olla pelkät persoonat, ei johdantoa tai muita selityksiä. Älä lisää viitteitä tekstiin.
   `;
 }

@@ -12,7 +12,7 @@ async function assistant(prompt, assistant_id) {
     content: prompt,
   });
 
-  console.log(message);
+  console.log('seppo', message);
 
   let run = await openai.beta.threads.runs.createAndPoll(thread.id, {
     assistant_id,
