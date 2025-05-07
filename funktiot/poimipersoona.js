@@ -30,7 +30,7 @@ const lisaaKuvat = (html, imgUrls) => {
 
   // Käydään läpi kaikki h2-elementit ja lisätään niille kuvia
   $('h2').each((index, element) => {
-    const imgTag = `<img src="${imgUrls[index]}" class="img-fluid" style="width: 320" alt="Persoona ${index + 1}">`;
+    const imgTag = `<div style="width: 320px"><img src="${imgUrls[index]}" class="img-fluid" alt="Persoona ${index + 1}"></div>`;
     $(element).after(imgTag); // Lisätään img-elementti h2:n jälkeen
   });
 

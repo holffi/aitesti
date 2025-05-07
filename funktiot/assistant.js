@@ -20,6 +20,7 @@ async function assistant(prompt, assistant_id) {
 
   if (run.status === 'completed') {
     const messages = await openai.beta.threads.messages.list(run.thread_id);
+    console.log('jorma', messages);
     for (const message of messages.data.reverse()) {
       console.log(`${message.role} > ${message.content[0].text.value}`);
       if (message.role === 'assistant') {

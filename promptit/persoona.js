@@ -1,5 +1,5 @@
 function createPersona(kuvaus) {
-  return `Tavoitteena on luoda käyttäjäpersoonia sovellukselle jonka kuvaus on seuraava: "${kuvaus}". Haluan sinun hyödyntävän ensisijaisesti vector storessa olevia dokumentteja ('testi') niiden laatimiseen. Suunnittele kolme erilaista käyttäjäpersoonaa noudattaen näitä ohjeita:
+  return `Tavoitteena on luoda käyttäjäpersoonia sovellukselle tai yritykselle jonka kuvaus on seuraava: "${kuvaus}". Haluan sinun hyödyntävän ensisijaisesti vector storessa olevia dokumentteja ('testi') niiden laatimiseen. Suunnittele kolme erilaista käyttäjäpersoonaa noudattaen näitä ohjeita:
 
   Analysoi 'testi'-storagen asiakirjat: Käytä nimenomaan näitä dokumentteja tietolähteinä. Poimi dokumenteista olennaisia tietoja, jotka liittyvät käyttäjäpersoonien tarpeisiin, haasteisiin ja käyttäytymismalleihin.
 

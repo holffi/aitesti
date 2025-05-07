@@ -47,7 +47,7 @@ app.post('/neuvottelu', async (req, res) => {
 
 app.post('/kartoitus', async (req, res) => {
   console.log(req.body);
-  const assistant_id = 'asst_DkFLbzHboaLA6HXafHSDU6zL';
+  const assistant_id = 'asst_RqpOGyFOGhvwfOUTfrlmr7UE';
   let prompt = '';
   switch (req.body.toiminto) {
     case 'persoona':
@@ -64,6 +64,7 @@ app.post('/kartoitus', async (req, res) => {
   }
   const vastaus = await assistant(prompt, assistant_id);
   const md = MarkdownIt();
+  console.log('vastaus', vastaus);
   const teksti = md.render(vastaus);
   if (req.body.toiminto === 'persoona') {
     const persoonaTekstit = poimiPersoona(teksti);

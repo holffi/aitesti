@@ -1,5 +1,5 @@
 function createKilpailijat(kuvaus) {
-  return `Analysoi kilpailijoiden markkinointistrategioita ja -materiaaleja sovellukselle, jonka kuvaus on seuraava: '${kuvaus}. Tarkastele kaikkia mahdollisia kilpailijoita.
+  return `Analysoi kilpailijoiden markkinointistrategioita ja -materiaaleja sovellukselle tai yrityksille, jonka kuvaus on seuraava: '${kuvaus}. Tarkastele kaikkia mahdollisia kilpailijoita.
 
 Mitkä ovat heidän vahvuutensa ja heikkoutensa?
 Mitä ainutlaatuisia ominaisuuksia uusi markkinapaikka voisi tarjota erottuakseen kilpailijoista?

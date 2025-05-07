@@ -1,5 +1,5 @@
 function createSegmentti(kuvaus) {
-  return `Haluan ymmärtää, miten potentiaaliset asiakkaat voidaan segmentoida sovellukselle jonka kuvaus on seuraava: "${kuvaus}". Käytä vector storessa olevia asiakirjoja, jos mahdollista, analysoidessasi seuraavia näkökulmia:
+  return `Haluan ymmärtää, miten potentiaaliset asiakkaat voidaan segmentoida sovellukselle tai yritykselle jonka kuvaus on seuraava: "${kuvaus}". Käytä vector storessa olevia asiakirjoja, jos mahdollista, analysoidessasi seuraavia näkökulmia:
 
 1. **Pelaajakäyttäytyminen ja demografia**: Etsi tietoa pelaajien ikäryhmistä, maantieteellisestä sijainnista ja pelaajakäyttäytymisestä. Miten nämä tekijät vaikuttavat siihen, miten he ostavat ja myyvät skinejä?
 
